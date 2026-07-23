@@ -1,7 +1,24 @@
 aid: apigy
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/apigy.png
 name: Apigy
-description: Apigy is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Apigy, Inc. is the company behind Lockitron, an early keyless smart-lock
+  startup that let people lock, unlock, and share access to their doors from a smartphone.
+  Backed by 500 Startups (now 500 Global) and known for a large 2012 crowdfunding
+  campaign, Apigy built connected door-lock hardware and companion mobile apps before
+  the Lockitron product line was wound down. Surfaced as a 500 Global portfolio company
+  and added to the API Evangelist network; its public website (lockitron.com) is
+  currently unreachable and no active developer or API surface could be located.
 url: https://raw.githubusercontent.com/api-evangelist/apigy/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +26,17 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: dormant
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Smart Lock
+- IoT
+- Access Control
+- Hardware
+- Consumer Electronics
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +46,8 @@ maintainers:
 common:
 - type: Website
   url: https://lockitron.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
